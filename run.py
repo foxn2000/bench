@@ -3,7 +3,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 import google.generativeai as genai
 
 def get_api_key():
-    GOOGLE_API_KEY='AIzaSyCTpZ3WPEwiY_dEUTsbCnDr12wXU-ZZbpY'
+    GOOGLE_API_KEY='your api key'
     return GOOGLE_API_KEY
 
 GOOGLE_API_KEY = get_api_key()
