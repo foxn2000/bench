@@ -100,7 +100,7 @@ count = 0
 with open('test.csv', 'r', encoding='utf-8') as csvfile:
     reader = csv.reader(csvfile)
     for row in reader:
-        if count > 0 + 1:
+        if count > 0:
             print(f'問題: {row[0]}, 回答: {row[1]}, 採点ポイント: {row[2]}')
             out = local_LLM(str(row[0]))
             exam_text = make_input(out,row[0],row[1],row[2])
