@@ -59,7 +59,7 @@ def local_LLM(user_inputs_text):
     return out
 
 def make_input(LLM_output,question,Correct_text,eval_aspect,):
-    exam_text = """問題, 正解例, 採点基準, 言語モデルが生成した回答が与えられます。
+    exam_text = f"""問題, 正解例, 採点基準, 言語モデルが生成した回答が与えられます。
 
 # 指示
 「採点基準」と「正解例」を参考にして、回答を1,2,3,4,5の5段階で採点し、数字のみを出力してください。
